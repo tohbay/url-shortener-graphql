@@ -14,4 +14,6 @@ const UrlSchema: Schema = new Schema({
   clickCount: { type: Number, required: true },
 })
 
-const User: Model<IUrl> = model('Url', UrlSchema)
+const Url: Model<IUrl> = model('Url', UrlSchema)
+
+export default Url
